@@ -10,6 +10,7 @@ admin.site.register(Genre)
 
 # Define the admin class
 
+
 class BooksInstanceInline(admin.TabularInline):
     model = BookInstance
 
@@ -39,6 +40,14 @@ class BookInstanceAdmin(admin.ModelAdmin):
     """
     Admin for BookInstance
     """
-    list_filter = ('due_back', 'status')
+    list_display = ('book', 'status', 'borrower', 'due_back', 'id')
+    list_filter = ('status', 'due_back')
 
-
+    fieldsets = (
+        (None, {
+            'fields': ('book', 'imprint', 'id')
+        }),
+        ('Availability', {
+            'fields': ('status', 'due_back', 'borrower')
+        }),
+    )
