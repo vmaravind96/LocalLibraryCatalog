@@ -35,12 +35,6 @@ class Book(models.Model):
     class Meta:
         ordering = ['title']
 
-    @property
-    def is_overdue(self):
-        if self.due_back and date.today() > self.due_back:
-            return True
-        return False
-
     def __str__(self):
         """
         String for representing the Model object.
@@ -84,6 +78,13 @@ class BookInstance(models.Model):
 
     class Meta:
         ordering = ["due_back"]
+        permissions = (("can_mark_returned", "Set book as returned"), ("staff_permission_required", "See all borrowers"))
+
+    @property
+    def is_overdue(self):
+        if self.due_back and date.today() > self.due_back:
+            return True
+        return False
 
     def __str__(self):
         """
