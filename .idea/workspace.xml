@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e8eb133-3362-4260-a16c-0620b5d6f946" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/tests/test_forms.py" afterPath="$PROJECT_DIR$/catalog/tests/test_forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/tests/test_views.py" afterPath="$PROJECT_DIR$/catalog/tests/test_views.py" />
     </list>
     <ignored path="locallibrary.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_forms.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/tests/test_forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
@@ -88,12 +88,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/tests/test_views.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/catalog/tests/test_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-15">
+              <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,12 +177,12 @@
         <option value="$PROJECT_DIR$/catalog/templates/catalog/book_confirm_delete.html" />
         <option value="$PROJECT_DIR$/catalog/templates/catalog/author_confirm_delete.html" />
         <option value="$PROJECT_DIR$/catalog/views.py" />
-        <option value="$PROJECT_DIR$/catalog/tests/test_views.py" />
         <option value="$PROJECT_DIR$/catalog/tests/__init__.py" />
         <option value="$PROJECT_DIR$/catalog/tests.py" />
         <option value="$PROJECT_DIR$/catalog/tests/test_models.py" />
         <option value="$PROJECT_DIR$/catalog/models.py" />
         <option value="$PROJECT_DIR$/catalog/tests/test_forms.py" />
+        <option value="$PROJECT_DIR$/catalog/tests/test_views.py" />
       </list>
     </option>
   </component>
@@ -620,13 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -882,14 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/tests/test_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/tests/test_models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -914,6 +911,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/tests/test_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
