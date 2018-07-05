@@ -7,7 +7,7 @@ from django.urls import reverse
 import datetime
 from django.utils import timezone
 
-from catalog.models import BookInstance, Book, Genre, Language
+from catalog.models import BookInstance, Book, Genre
 from django.contrib.auth.models import User  # Required to assign User as a borrower
 
 
@@ -68,7 +68,7 @@ class LoanedBookInstancesByUserListViewTest(TestCase):
         # Create a book
         test_author = Author.objects.create(first_name='John', last_name='Smith')
         test_genre = Genre.objects.create(name='Fantasy')
-        test_language = Language.objects.create(name='English')
+        # test_language = Language.objects.create(name='English')
         test_book = Book.objects.create(title='Book Title', summary='My book summary', isbn='ABCDEFG',
                                         author=test_author, language=test_language)
         # Create genre as a post-step
