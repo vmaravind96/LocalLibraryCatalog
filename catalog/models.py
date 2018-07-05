@@ -1,9 +1,9 @@
-from django.db import models
-from django.urls import reverse  #Used to generate URLs by reversing the URL patterns
 import uuid
-from django.contrib.auth.models import User
 from datetime import date
 
+from django.contrib.auth.models import User
+from django.db import models
+from django.urls import reverse  #Used to generate URLs by reversing the URL patterns
 # Create your models here.
 
 
@@ -34,6 +34,7 @@ class Book(models.Model):
 
     class Meta:
         ordering = ['title']
+        permissions = [("can_edit_book", 'Add,Del or Modify books')]
 
     def __str__(self):
         """
@@ -104,6 +105,7 @@ class Author(models.Model):
 
     class Meta:
         ordering = ["last_name", "first_name"]
+        permissions = [("can_edit_author", 'Add,modify or del author')]
 
     def get_absolute_url(self):
         """
@@ -116,4 +118,6 @@ class Author(models.Model):
         String for representing the Model object.
         """
         return '{0}, {1}'.format(self.last_name, self.first_name)
+
+
 
